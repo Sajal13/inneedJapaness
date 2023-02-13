@@ -1,0 +1,448 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="inNeed.cloud corporation">
+    <meta name="description" content="inNeed cloud corporation official website for Japan. All text are in Japaness language.">
+    <title>Inneed cloud</title>
+    <link rel="shortcut icon" href="./img/inneed_cloud_icon.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    boxShadow: {
+                        customShadow : '3px 5px 22px rgba(1, 23, 54, 0.32) ',
+                        abilitiesShadow: '0px 4px 53px rgba(6, 55, 124, 0.24)'
+                    },
+                    colors:{
+                        'text-shadows': 'rgba(243, 243, 246)'
+                    },
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .open {
+                width: 100%;
+                height: 100vh;
+                display: block;
+                background-color: #1F2235;
+                position: fixed;
+                z-index: 10;
+                top: 0rem;
+                right: 0rem;
+        
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="h-20 relative">
+                <nav class="h-full flex flex-col lg:flex-row lg:items-center shadow-md shadow-[rgba(217, 217, 217, 0.42)] bg-white">
+                    <div class="lg:container flex-col lg:flex-row lg:m-auto ml-4 flex justify-between lg:items-center">
+                        <div class="mt-4 lg:mt-0">
+                            <a href="#home">
+                                <img class="h-[35.6px] w-[129px]" src="./img/logo.png" alt="inNeed cloud">
+                            </a>
+                        </div>
+                        <div class="flex w-full items-center lg:w-auto">
+                            <ul id="navItems" class=" hidden w-full h-full lg:relative lg:bg-transparent lg:flex py-5 lg:p-0 z-1 items-center">
+                                <div class="mt-36 lg:mt-0 lg:m-0 lg:mr-10 flex justify-center items-center flex-col lg:flex-row leading-[19px] text-white lg:text-[#011736] ">
+                                    <li class="fixed top-5 right-6 lg:hidden">
+                                        <button id="hamBurgerBtnClose">
+                                            <i class="fa fa-solid fa-xmark text-white text-3xl"></i>
+                                        </button>
+                                    </li>
+                                    <li class="py-4 lg:py-0 lg:mr-4">
+                                        <a href="https://inneed.cloud/our-capabilities/" target="_blank" class="p-2 lg:p-4 text-4xl lg:text-base hover:text-transparent bg-clip-text bg-gradient-to-r hover:from-[#05E8BA]  hover:to-[#087EE1] hover:rounded-lg"> 私たちの能力</a>
+                                    </li>
+                                    <li class="py-4 lg:py-0 lg:mr-4">
+                                        <a href="https://inneed.cloud/our-focuses/" target="_blank" class="sm:p-0 lg:p-4 text-4xl lg:text-base hover:text-transparent bg-clip-text bg-gradient-to-r  hover:from-[#05E8BA] hover:to-[#087EE1] hover:rounded-lg"> 私たちの焦点</a>
+                                    </li>
+                                    <li class="py-4 lg:py-0 lg:mr-8">
+                                        <a href="https://inneed.cloud/about-us/" target="_blank" class="sm:p- lg:p-4 text-4xl lg:text-base  hover:text-transparent bg-clip-text bg-gradient-to-r hover:from-[#05E8BA] hover:to-[#087EE1] hover:rounded-lg">私たちに関しては</a>
+                                    </li>
+                                </div>
+                                <div class="flex flex-col justify-center items-center m-10 lg:m-3">
+                                    <a href="https://inneed.cloud/contact-us/" target="_blank">
+                                        <button class="px-16 py-3 lg:px-6 lg:py-3 bg-gradient-to-r from-[#087EE1] to-[#05E8BA] rounded text-2xl lg:text-base text-white hover:from-[#05E8BA] hover:to-[#087EE1]">
+                                            お問い合わせ
+                                        </button>
+                                    </a>
+                                </div>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="absolute right-6 top-5 z-100 m-auto block lg:hidden"  id="hamBurger">
+                    <button id="hamBurgerBtn">
+                        <i id="icons" class="fa fa-solid fa-bars text-3xl"></i>
+                    </button>
+                </div> 
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="home" class="flex relative mb-6">
+            <div class="hidden lg:block bg-[#06377C] h-[90vh] w-1/2"></div>
+            <div class="hidden h-[90vh] w-1/2 lg:flex lg:flex-col lg:justify-end lg:items-start">
+                <a href="https://inneed.cloud/contact-us/" target="_blank">
+                    <button class="relative text-[#06377C] inline-flex shadow-customShadow items-center justify-start py-3 pl-2 pr-10 overflow-hidden transition-all duration-150 ease-in-out rounded-md bg-white group ml-8">
+                        <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-[#06377C] group-hover:h-full"></span>
+                        <span class="absolute right-1 pr-3 duration-200 ease-in-out group-hover:translate-x-1">
+                        <svg class="w-5 h-5 text-[#06377c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linejoin="forward" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                        <span class="absolute right-0 -translate-x-12 group-hover:-translate-x-2 ease-out duration-200">
+                        <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </span>
+                        <span class="relative text-xs w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">レッツトーク</span>
+                    </button>
+                </a>
+            </div>
+            <div class=" relative z-[-1] lg:z-auto lg:absolute lg:right-0 lg:top-[10%] lg:w-4/5 lg:bottom-[10%] lg:overflow-y-hidden">
+                <img class="h-full w-full" src="./img/jp-inneed.jpg" alt="Hero Image">
+            </div>
+            <div class="absolute z-[-1] lg:z-auto left-[4%] top-1/4 lg:top-[30%] w-3/4 md:w-2/3 lg:w-[40%] text-white text-2xl md:text-4xl lg:text-5xl">
+                <p class="md:leading-normal">クラウドからビジネス価値を最大化しませんか</p>
+            </div>
+        </div>
+
+
+        <div class="m-6">
+            <div class="lg:container mx-auto">
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div>
+                        <img class="h-full w-full" src="./img/groupOfPeople.png" alt=" groups">
+                    </div>
+                     <div class="">
+                        <div class="flex lg:flex-row flex-col lg:justify-end items-start lg:items-center lg:p-0 mb-6 lg:mb-24">
+                            <span class="lg:translate-y-1/3 text-3xl lg:text-7xl text-[#e3f3f6] text-shadows sm:tracking-[6px] lg:tracking-[2px]">
+                                私たちに関しては
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-end mb-14">
+                            <div class="px-2 lg:w-[75%]">
+                                <p class="break-all text-[#06377C] leading-loose tracking-wider mb-4">
+                                    InNeed は、クラウドネイティブの高度な IT コンサルティングおよびサービス プロバイダーです。 クラウドの革新的な機能を活用して、お客様が新しい収益源を構築し、インフラストラクチャ コストを節約し、効率を高め、高度なテクノロジー ソリューションを提供できるよう支援します。
+
+                                    <div class="flex justify-start text-[#06377C] ">
+                                        <a href="https://inneed.cloud/about-us/" target="_blank" class="relative z-[-1] lg:z-auto text-[#06377C] inline-flex items-center justify-start py-3 pl-2 pr-10 overflow-hidden transition-all duration-150 ease-in-out rounded-md bg-white group">
+                                            <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-[#06377C] group-hover:h-full"></span>
+                                            <span class="absolute right-1 pr-3 duration-200 ease-in-out group-hover:translate-x-1">
+                                            <svg class="w-5 h-5 text-[#06377c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linejoin="forward" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                            </span>
+                                            <span class="absolute right-0 -translate-x-12 group-hover:-translate-x-2 ease-out duration-200">
+                                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                            </span>
+                                            <span class="relative text-xs w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">詳細を見る</span>
+                                        </a>
+                                    </div>  
+                                </p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mb-6">
+            <div id="capabilities" class="lg:container mx-auto">
+                <div class="px-6 lg:px-0 flex flex-col justify-center items-center lg:flex-row">
+                    <div class="lg:order-2 w-full lg:w-1/2">
+                        <img class="h-full w-full" src="./img/tech.png" alt=" groups">
+                    </div>
+                     <div class="lg:order-1 w-full lg:w-1/2">
+                        <div class="flex lg:flex-row flex-col lg:justify-end items-start lg:items-center lg:p-0 mb-4">
+                            <span class="lg:-translate-y-1/4 text-[30px] lg:text-[80px] text-[#e3f3f6] text-shadows sm:tracking-[6px] lg:tracking-[2px]">
+                                どうして InNeed
+                            </span>
+                        </div>
+                        <div class=" mb-14">
+                            <div class=" px-2 lg:pl-8 lg:pr-20 w-full">
+                                <p class="break-all text-[#06377C] leading-loose tracking-wider mb-4">
+                                    InNeed 私たちは、クラウドネイティブに関するITコンサルティング及び開発をしているサービスプロバイダーです。お客さまがクラウドの革新的な機能を活用して新しい収益源を構築できるように、私たちは効率の良いインフラストラクチャ及びテクノロジーソリューションを提供します
+                                    <div class="flex items-center text-[#06377C]">
+                                        <div class="flex items-center text-[#06377C] ">
+                                            <a href="#_" class="relative text-[#06377C] inline-flex items-center justify-start py-3 pl-2 pr-10 overflow-hidden transition-all duration-150 ease-in-out rounded-md bg-white group">
+                                                <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-[#06377C] group-hover:h-full"></span>
+                                                <span class="absolute right-1 pr-3 duration-200 ease-in-out group-hover:translate-x-1">
+                                                <svg class="w-5 h-5 text-[#06377c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linejoin="forward" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                                </span>
+                                                <span class="absolute right-0 -translate-x-12 group-hover:-translate-x-2 ease-out duration-200">
+                                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                                </span>
+                                                <span class="relative text-xs w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">詳細を見る</span>
+                                            </a>
+                                        </div>
+                                    </div>  
+                                </p>
+                            </div>   
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="mb-6 lg:mb-24 bg-norepeat bg-center bg-cover bg-[url('./img/updated.jpg')]">
+            <div class="">
+                <div class="lg:grid lg:grid-cols-2">
+                    <div class="bg-[#1138624A] col-span-1 px-6 py-6 md:py-10 lg:px-11 lg:py-11">
+                        <p class="text-6xl md:text:7xl lg:text-9xl text-[#e3f3f6] mb-6">
+                            私たちのサービス
+                        </p>
+                        <a href="https://inneed.cloud/our-capabilities/" target="_blank">
+                            <button class="relative text-[#06377C] shadow-abilitiesShadow inline-flex items-center justify-start py-3 pl-4 pr-10 overflow-hidden transition-all duration-150 ease-in-out rounded-md bg-white group">
+                                <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-[#06377C] group-hover:h-full"></span>
+                                <span class="absolute right-1 pr-3 duration-200 ease-in-out group-hover:translate-x-1">
+                                <svg class="w-5 h-5 text-[#06377c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linejoin="forward" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </span>
+                                <span class="absolute right-0 -translate-x-12 group-hover:-translate-x-2 ease-out duration-200">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                </span>
+                                <span class="relative text-xs w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">お問い合わせ</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="lg:grid lg:grid-cols-3">
+                    <div class="bg-[#113862B8] lg:col-start-3 px-8 py-11">
+                        <div>
+                            <div class="flex items-center gap-6 py-2">
+                                <div>
+                                    <img class="h-8 w-12" src="./img/icon3.png" alt="cloud">
+                                </div>
+                                <div class="text-xl lg:text-2xl text-white font-bold">
+                                    クラウドへのマイグレーション
+
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 py-2">
+                                <div>
+                                    <img class="h-8 w-12" src="./img/cloud.png" alt="cloud">
+                                </div>
+                                <div class="text-xl lg:text-2xl text-white font-bold">
+                                    サーバーレス開発
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 py-2">
+                                <div>
+                                    <img class="h-8 w-12" src="./img/icon2.png" alt="cloud">
+                                </div>
+                                <div class="text-xl lg:text-2xl text-white font-bold">
+                                    AI と機械学習
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-6 py-2">
+                                <div>
+                                    <img class="h-8 w-12" src="./img/icon5.png" alt="cloud">
+                                </div>
+                                <div class="text-xl lg:text-2xl text-white font-bold">
+                                    データサイエンスと分析
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="m-6">
+            <div class="lg:container mx-auto">
+                <div class="grid lg:grid-cols-2 gap-4">
+                    <div>
+                        <img class="h-full w-full" src="./img/Group 2541.png" alt=" groups">
+                    </div>
+                     <div class="">
+                        <div class="flex lg:flex-row flex-col lg:justify-end items-start lg:items-center lg:p-0 mb-6 lg:mb-24">
+                            <span class="lg:translate-y-1/3 text-3xl lg:text-7xl text-[#e3f3f6] text-shadows sm:tracking-[6px] lg:tracking-[2px]">
+                                私たちの焦点
+                            </span>
+                        </div>
+                        <div class="flex items-center justify-center lg:justify-end mb-14">
+                            <div class="px-2 lg:w-[75%]">
+                                <p class="break-all text-[#06377C] leading-loose tracking-wider mb-4">
+                                    デジタルトランスフォーメーションには、新しいテクノロジー以上のものが必要です。 文化、コミュニケーション、仕事の進め方を根本的に変える必要があります。 クラウドの革新的な機能を活用して、技術研究、開発、およびビジネス目標を強化し、業界内で模範的なものにします!
+                                    <div class="flex justify-start text-[#06377C] ">
+                                        <a href="https://inneed.cloud/our-focuses/" target="_blank" class="relative z-[-1] lg:z-auto text-[#06377C] inline-flex items-center justify-start py-3 pl-2 pr-10 overflow-hidden transition-all duration-150 ease-in-out rounded-md bg-white group">
+                                            <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-[#06377C] group-hover:h-full"></span>
+                                            <span class="absolute right-1 pr-3 duration-200 ease-in-out group-hover:translate-x-1">
+                                            <svg class="w-5 h-5 text-[#06377c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linejoin="forward" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                            </span>
+                                            <span class="absolute right-0 -translate-x-12 group-hover:-translate-x-2 ease-out duration-200">
+                                            <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                            </span>
+                                            <span class="relative text-xs w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">詳細を見る</span>
+                                        </a>
+                                    </div>  
+                                </p>
+                            </div>
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-norepeat bg-center bg-cover bg-[url('./img/bgImage2.png')] mb-10">
+            <div class=" bg-[#1F2235C2] backdrop-brightness-75">
+                <div class="container mx-auto">
+                    <div class="py-14">
+                        <div class=" text-2xl lg:text-4xl text-center text-white px-2 py-6 lg:px-10 lg:py-16">
+                            プロジェクトを念頭に置いていますか？ 話しましょう。
+                        </div>
+                        <div class=" flex justify-center">
+                            <a href="https://inneed.cloud/contact-us/" target="_blank">
+                                <button class="p-2 flex items-center bg-gradient-to-r from-[#087EE1] to-[#05E8BA] rounded-[6px] text-white hover:from-[#05E8BA] hover:to-[#087EE1]">
+                                    <div class="px-2">
+                                        お問い合わせ
+                                    </div>
+                                    <div class="">
+                                        <i class="fa-solid fa-arrow-right text-white"></i>
+                                    </div>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mb-6">
+            <div id="capabilities" class="lg:container mx-auto">
+                <div class="px-6 lg:px-0 flex flex-col justify-center items-center lg:flex-row">
+                    <div class="lg:order-2 w-full lg:w-1/2">
+                        <img class="h-full w-full" src="./img/community.png" alt=" groups">
+                    </div>
+                     <div class="lg:order-1 w-full lg:w-1/2">
+                        <div class="flex lg:flex-row flex-col lg:justify-end items-start lg:items-center lg:p-0 mb-4">
+                            <span class="lg:-translate-y-1/4 text-3xl lg:text-6xl text-[#e3f3f6] text-shadows sm:tracking-[6px] lg:tracking-[2px]">
+                                私たちのワークフロー
+                            </span>
+                        </div>
+                        <div class=" mb-14">
+                            <div class=" px-2 lg:px-10 w-full">
+                                <p class="break-all text-[#06377C] leading-loose tracking-wider mb-4">
+                                    
+                                    <div class="flex items-center text-[#06377C]">
+                                        <div class="flex items-center text-[#06377C] ">
+                                            <a href="#_" class="relative text-[#06377C] inline-flex items-center justify-start py-3 pl-2 pr-10 overflow-hidden transition-all duration-150 ease-in-out rounded-md bg-white group">
+                                                <span class="absolute bottom-0 left-0 w-full h-0 transition-all duration-150 ease-in-out bg-[#06377C] group-hover:h-full"></span>
+                                                <span class="absolute right-1 pr-3 duration-200 ease-in-out group-hover:translate-x-1">
+                                                <svg class="w-5 h-5 text-[#06377c]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linejoin="forward" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                                </span>
+                                                <span class="absolute right-0 -translate-x-12 group-hover:-translate-x-2 ease-out duration-200">
+                                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                                                </span>
+                                                <span class="relative text-xs w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">詳細を見る</span>
+                                            </a>
+                                        </div>
+                                    </div>  
+                                </p>
+                            </div>   
+                        </div>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bg-norepeat bg-cover bg-center bg-[url('./img/bgImage3.png')] mb-4">
+            <div class=" bg-[#06377CA3] backdrop-brightness-75">
+                <div class="container mx-auto">
+                    <div class="lg:grid lg:grid-cols-2 lg:place-content-around lg:place-items-between lg:gap-4 py-2">
+                        <div class="text-6xl lg:text-8xl text-white px-4 py-2 md:px-8 md:py-6 lg:px-10 lg:py-10 mb-8 lg:mb-0">
+                            <p class="leading-tight">
+                                ご連絡ください
+                            </p>
+                        </div>
+                        <div class="mx-4 my-6 md:m-10 lg:m-14">
+                            <div class="bg-white rounded-lg">
+                                <div class="px-4 py-2 md:px-6 md:py-8 lg:px-8 lg:py-10">
+                                    <form action="">
+                                        <p class="p-2 mb-2 text-2xl text-[#06377C]">お問い合わせ</p>
+                                        <div>
+                                            <input class="px-4 py-3 mb-6 bg-[#D9D9D9] shadow-inner-[0px 4px 4px] rounded-lg w-full outline-none outline-none focus:outline focus:outline-1 focus:outline-offset-0 focus:outline-[#087EE1]" type="text" name="name" placeholder="名前">
+                                        </div>
+                                        <div>
+                                            <input class="px-4 py-3 mb-6 bg-[#D9D9D9] shadow-inner-[0px 4px 4px] rounded-lg outline-none outline-none focus:outline focus:outline-1 focus:outline-offset-0 focus:outline-[#087EE1] w-full" type="email" name="email" placeholder="電子メールアドレス">
+                                        </div>
+                                        <div>
+                                            <textarea class="px-4 py-3 bg-[#D9D9D9] shadow-[inner_0px_4px_4px_rgba(217, 217, 217, 0.35)] rounded-lg w-full outline-none focus:outline focus:outline-offset-0 focus:outline-1 focus:outline-[#087EE1] resize-none" name="message" placeholder="メッセージ" cols="30" rows="6"></textarea>
+                                        </div>
+                                        <div class="mt-5 grid place-content-center">
+                                            <button class=" px-14 py-3 rounded-md text-white bg-gradient-to-r from-[#087EE1] to-[#05E8BA] hover:bg-gradient-to-r hover:from-[#05E8BA] hover:to-[#087EE1] " type="submit">
+                                                送信
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 items-end lg:justify-items-center gap-4 p-6 lg:pl-0 md:pt-24 border-b-2 border-solid border-[#ececec]">
+                <div class="md:col-span-2 lg:col-span-1 ">
+                    <a href="https://inneed.cloud/">
+                        <img class="mb-3" src="./img//logo.png" alt="inneed intelligence cloud bd ltd.">
+                        <span class="text-xs text-[#07316D]">InNeed Intelligent Cloud bd Ltd. </span>
+                    </a>
+                </div>
+                <div>
+                    <i class="fa fa-thin fa-envelope text-[#06377C] text-xl mb-1"></i>
+                    <p class="text-[15px] text-[#05E8BA] uppercase">電子メールを送信する</p>
+                    <a href="mailto:info@inneed.cloud" class="text-lg text-[#07316D]">info@inneed.cloud</a>
+                </div>
+                <div>
+                    <i class="fa fa-solid fa-phone text-[#06377C] text-xl mb-1"></i>
+                    <p class="text-[15px] text-[#05E8BA] uppercase">通話する</p>
+                    <a href="tel:+12345678" class="text-lg text-[#07316D] cursor-pointer">+1 2345 678</a>
+                </div>
+                <div>
+                    <i class="fa fa-thin fa-location-dot text-[#06377C] text-2xl mb-1"></i>
+                    <p class="text-[15px] text-[#05E8BA] uppercase">連絡をとる</p>
+                    <span class="text-lg text-[#07316D]">1245, New Yourk, USA</span>
+                </div>
+                <div>
+                    <p class="text-[#06377C] text-lg">フォローする</p>
+                    <div class="mt-1">
+                        <a href="https://www.facebook.com/InNeed.Cloud" target="_blank">
+                            <i class="fa fa-brands fa-facebook text-2xl text-[#06377C] mr-3 cursor-pointer duration-300 hover:scale-125">
+                            </i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/inneedcloud/" target="_blank">
+                            <i class="fa-brands fa-linkedin text-2xl text-[#06377C] mr-3 cursor-pointer duration-300 hover:scale-125 rounded"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@inneedyoutube7357/featured" target="_blank">
+                            <i class="fa fa-brands fa-youtube text-2xl text-[#06377C] mr-3 cursor-pointer duration-300 hover:scale-125"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+             <div class="flex flex-col lg:flex-row justify-between px-6 lg:px-0 py-4">
+                <div>
+                    <a href="#" class="text-sm text-[#979797] text-center cursor-pointer hover:text-[#05E8BA]">プライバシーポリシー</a>
+                </div>
+                <div>
+                    <p class="text-sm text-[#979797]">著作権 © <span class="text-[#05E8BA] cursor-pointer"> <a href="https://inneed.cloud/" target="_blank">InNeed </a></span> 2023 全著作権所有</p>
+                </div>
+             </div>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
